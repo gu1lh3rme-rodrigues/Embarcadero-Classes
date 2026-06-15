@@ -1,9 +1,5 @@
 #include <stdio.h>
 #define com 50.00
-
-
-
-
 main(){
 	float sal=1621, vendas, sltt;
 	int qtde;

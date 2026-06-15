@@ -4,7 +4,7 @@ int main() {
     char nome[50];
     int qtdParafusos, qtdPorcas, qtdArruelas;
     float precoParafuso, precoPorca, precoArruela;
-    float totalBruto = 0, totalDesconto = 0, totalPagar;
+    float tb = 0, td = 0, tp;
     int i;
 
     printf("Digite o nome do cliente: ");
@@ -30,30 +30,30 @@ int main() {
 
     /* Calcula valor dos parafusos */
     for(i = 1; i <= qtdParafusos; i++) {
-        totalBruto += precoParafuso;
-        totalDesconto += precoParafuso * 0.20;
+        tb += precoParafuso;
+        td += precoParafuso * 0.20;
     }
 
     /* Calcula valor das porcas */
     for(i = 1; i <= qtdPorcas; i++) {
-        totalBruto += precoPorca;
-        totalDesconto += precoPorca * 0.10;
+        tb += precoPorca;
+        td += precoPorca * 0.10;
     }
 
     /* Calcula valor das arruelas */
     for(i = 1; i <= qtdArruelas; i++) {
-        totalBruto += precoArruela;
-        totalDesconto += precoArruela * 0.30;
+        tb += precoArruela;
+        td += precoArruela * 0.30;
     }
 
-    totalPagar = totalBruto - totalDesconto;
+    tp = tb - td;
 
     printf("\n===== RESUMO DA COMPRA =====\n");
     printf("Cliente: %s\n", nome);
     printf("Quantidade de parafusos: %i\n", qtdParafusos);
     printf("Quantidade de porcas: %i\n", qtdPorcas);
     printf("Quantidade de arruelas: %i\n", qtdArruelas);
-    printf("Total de desconto: R$ %.2f\n", totalDesconto);
-    printf("Total a pagar: R$ %.2f\n", totalPagar);
+    printf("Total de desconto: R$ %.2f\n", td);
+    printf("Total a pagar: R$ %.2f\n", tp);
 
 }

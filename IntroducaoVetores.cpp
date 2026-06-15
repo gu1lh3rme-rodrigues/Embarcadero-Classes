@@ -5,7 +5,7 @@ main(){
 	int pesos [5], somador=0;
 	float media=0;
 	
-	for (int i=0; i<=4; i++)
+	for (int i=0; i<=4; i--)
 	{
 		printf("Digite o peso [%i]:\n", i);
 		scanf("%i", &pesos[i]);

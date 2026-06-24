@@ -1,8 +1,8 @@
 #include <stdio.h>
-#define a 5//se necessario, altere a qtde de chamadas aqui
+#define a 2//se necessario, altere a qtde de chamadas aqui
 
 main(){
-	char nome[a][a], categoria[a];
+	char nome[a][50], categoria[a];
 	float sal[a], salt[a];
 	
 	printf("---Ajuste Salarial---\n\n\n");

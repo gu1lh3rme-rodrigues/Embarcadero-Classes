@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 main(){
-	int matriz[2][2];
+	int matriz[3][3];
 	int a, b;
 	printf("Matriz 2X2");
 	for(a=0; a<2;a++){
